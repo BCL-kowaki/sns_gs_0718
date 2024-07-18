@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <title>FREInet</title>
+</head>
+
+<body>
+    <section id="wrapper">
+        <section class="header">
+            <div class=img><img src="images/logo.png"></div>
+        </section>
+        <section class="timelinebox">
+            <div class="inner">
+                <form action="post_timeline.php" method="post" enctype="multipart/form-data">
+                    <dl>
+                        <dd>
+                            <div class="flex">
+                                <div class="postimg">
+
+                                    <img src='data/profiles/レイヤー 2_8.png' alt='プロフィール画像' width='50'
+                                        style='vertical-align: middle;'>
+                                </div>
+                                <textarea name="post_content" rows="4" cols="50" placeholder="今の気持ちを投稿しよう"
+                                    required></textarea>
+                            </div>
+                        <dd>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <input type="file" id="post_img" name="post_img">
+                                </li>
+                                <li><input type="submit" value="投稿"></li>
+                        </dd>
+                </form>
+            </div>
+        </section>
+
+        <div class="timeline">
+
+            <section class='box'>
+                <div class='post'>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_8.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <ul>
+                                <li><a href='profile.php?id=ID000015'><strong>小脇拓哉</strong></a></li>
+                                <li class='timestamp'>2024-06-29 13:56:49</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class='postarea'>
+                        <p>越tpてすとてすと</p>
+                    </div><img src='data/uploads/667f9411e7cff.jpg' alt='投稿画像'><a class="like-button heart"
+                        href="timeline.php?like=4&page=">&#9825;いいね</a><span>0</span>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_8.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <form action="post_comment.php" method="POST"><input type="hidden" name="post_id"
+                                    value="4"><textarea name="comment_text" placeholder="コメントを入力"></textarea><input
+                                    type="file" name="text_img"><button type="submit">コメント</button></form>
+                        <dd>
+                    </dl>
+                    <div class="comment">
+                        <div class="flex">
+                            <div><img src='data/profiles/レイヤー 2_8.png' alt='プロフィール画像'></div>
+                            <div class='fukidashi'>
+                                <a href='profile.php?id=ID000015'><strong>小脇拓哉</strong></a>
+                                <p>テストテスト</p>
+                            </div>
+                        </div><span class='timestamp'>2024-07-04 01:49:11</span>
+                        <div class="comment">
+                            <div class="flex">
+                                <div><img src='data/profiles/レイヤー 2_8.png' alt='プロフィール画像'></div>
+                                <div class='fukidashi'>
+                                    <a href='profile.php?id=ID000015'><strong>小脇拓哉</strong></a>
+                                    <p>テストテストテスト</p>
+                                </div>
+                            </div><span class='timestamp'>2024-07-04 01:44:53</span>
+                        </div>
+            </section>
+            <section class='box'>
+                <div class='post'>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_7.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <ul>
+                                <li><a href='profile.php?id=ID000014'><strong>小脇テスト</strong></a></li>
+                                <li class='timestamp'>2024-06-29 13:38:53</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class='postarea'>
+                        <p>小脇拓哉です</p>
+                    </div><a class="like-button heart red" href="timeline.php?like=3&page=">&#9829;いいね</a><span>1</span>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_7.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <form action="post_comment.php" method="POST"><input type="hidden" name="post_id"
+                                    value="3"><textarea name="comment_text" placeholder="コメントを入力"></textarea><input
+                                    type="file" name="text_img"><button type="submit">コメント</button></form>
+                        <dd>
+                    </dl>
+
+
+                    
+                    <div class="comment">
+                        <div class="flex">
+                            <div><img src='data/profiles/レイヤー 2_8.png' alt='プロフィール画像'></div>
+                            <div class='fukidashi'>
+                                <a href='profile.php?id=ID000015'><strong>小脇拓哉</strong></a>
+                                <p>テスト</p>
+                            </div>
+                        </div><span class='timestamp'>2024-07-04 19:16:55</span>
+                    </div>
+            </section>
+
+
+
+
+            <section class='box'>
+                <div class='post'>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_7.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <ul>
+                                <li><a href='profile.php?id=ID000014'><strong>小脇テウと</strong></a></li>
+                                <li class='timestamp'>2024-06-29 03:52:38</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class='postarea'>
+                        <p>今日はいい天気になれ！</p>
+                    </div><a class="like-button heart red" href="timeline.php?like=2&page=">&#9829;いいね</a><span>1</span>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_7.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <form action="post_comment.php" method="POST"><input type="hidden" name="post_id"
+                                    value="2"><textarea name="comment_text" placeholder="コメントを入力"></textarea><input
+                                    type="file" name="text_img"><button type="submit">コメント</button></form>
+                        <dd>
+                    </dl>
+                </div>
+            </section>
+            <section class='box'>
+                <div class='post'>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_7.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <ul>
+                                <li><a href='profile.php?id=ID000014'><strong>小脇テウと</strong></a></li>
+                                <li class='timestamp'>2024-06-29 03:52:31</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <div class='postarea'>
+                        <p>今日は天気だといいな</p>
+                    </div><a class="like-button heart red" href="timeline.php?like=1&page=">&#9829;いいね</a><span>1</span>
+                    <dl>
+                        <dt><img src='data/profiles/レイヤー 2_7.png' alt='プロフィール画像' width='50'></dt>
+                        <dd>
+                            <form action="post_comment.php" method="POST"><input type="hidden" name="post_id"
+                                    value="1"><textarea name="comment_text" placeholder="コメントを入力"></textarea><input
+                                    type="file" name="text_img"><button type="submit">コメント</button></form>
+                        <dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
+        </div>
+    </section>
+    </section>
+</body>
+
+</html>
